@@ -134,7 +134,7 @@ func (r *ConfigResource) Schema(ctx context.Context, req resource.SchemaRequest,
 					"Only for the es-replica topology, and only for the variables that the key list marks with replica_configurable. " +
 					"To make the replicas follow the primary again, remove the variable from the map.",
 				MarkdownDescription: "A map of MariaDB server variable names to the value that the replicas use " +
-					"(e.g. `sync_binlog = \"100\"`). A variable that is not in the map has the value of the primary on the replicas too.\n\n" +
+					"(e.g. `sync_binlog = \"100\"`). A variable that is not in the map has the value of the primary on the replicas too. " +
 					"Only for the `es-replica` topology, and only for the variables that the key list marks with `replica_configurable`. " +
 					"To make the replicas follow the primary again, remove the variable from the map. " +
 					"The variable does not have to be in `values`.",
