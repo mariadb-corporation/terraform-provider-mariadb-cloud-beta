@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.5.9-beta] - 2026-11-04
+### Fixed
+- GCP services on n4 machines, which can only attach Hyperdisk, no longer fail with "Provider produced inconsistent result after apply". On GCP an unset `volume_type` is left to the API, which picks `pd-ssd` or `hyperdisk-balanced`, and the IOPS and throughput the API fills in stay out of state unless the configuration sets them (MCDEV-5319).
+
 ## [3.5.8-beta] - 2026-10-01
 ### Changed
 - Release files are now named `terraform-provider-mariadb-cloud-beta`, after the repository's new name (`mariadb-corporation/terraform-provider-mariadb-cloud-beta`). The provider's behavior is unchanged.
