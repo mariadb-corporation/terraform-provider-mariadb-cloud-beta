@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [3.5.11-beta] - 2026-11-10
 ### Added
 - Support for `io2` volumes on AWS. Like `io1`, `io2` needs `volume_iops`, does not take `volume_throughput`, and changes its IOPS in place. The API checks the IOPS range, and `io2` needs a SkySQL environment that offers it.
 
